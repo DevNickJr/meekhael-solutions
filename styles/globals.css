@@ -41,9 +41,13 @@
   }
   
 .grad-to-right {
-    background-image: linear-gradient(to right,#F6792E, #D93C29, #D42F27);
+    background-image: linear-gradient(to right,#61769a, #4b7bb9, #4b8adb);
   }
   
+/* .grad-to-right {
+    background-image: linear-gradient(to right,#61769a, #4b7bb9, #3140dc);
+  }
+   */
   
 .no-scrollbar::-webkit-scrollbar {
     display: none;

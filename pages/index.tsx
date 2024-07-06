@@ -49,9 +49,9 @@ export default function Home({ cms, news }: { cms: ICms, news: INews[] }) {
               {/* <p className="mb-3 text-lg font-bold text-primary">STUDY WITH US</p> */}
               <h1 className="mb-3 text-4xl font-extrabold capitalize md:text-6xl">{cms?.hero?.header || "Empower Your Business with IT Solutions"}</h1>
               <p className="md:text-lg">{cms?.hero?.text || "Meekhaael Solutions Limited offers innovative IT solutions across education, social, and finance sectors. Our expert team delivers tailored, result-driven services to meet your unique needs"}</p>
-              <a href ="https://box.reinsys.net/brilliant/" className="flex items-center justify-between max-w-md text-sm bg-gray-100 rounded-xl md:text-base">
+              <a href ="https/" className="flex items-center justify-between max-w-md text-sm bg-gray-100 rounded-xl md:text-base">
                 <p className="ml-4">Lets get started</p>
-                {/* <a href={`https://box.reinsys.net/brilliant/`} className="px-6 py-3 text-sm text-white grad-to-right md:text-base rounded-xl w-fit">Connect with us</a> */}
+                {/* <a href={`/`} className="px-6 py-3 text-sm text-white grad-to-right md:text-base rounded-xl w-fit">Connect with us</a> */}
                 <Button className="px-5 py-3 text-white rounded-xl md:py-4">Connect with us</Button>
               </a>
             </div>
@@ -89,7 +89,7 @@ export default function Home({ cms, news }: { cms: ICms, news: INews[] }) {
             <p className="mb-4">
               Meekhaael Solutions Limited is dedicated to fostering your potential through our scholarship program. Sign up now and take the first step towards a future filled with opportunities
             </p>
-            <a href={'https://box.reinsys.net/brilliant/'} className="p-5 px-6 py-3 text-sm font-bold text-black bg-white rounded-full md:py-5 md:text-base md:px-10">Discover</a>
+            <a href={'/'} className="p-5 px-6 py-3 text-sm font-bold text-black bg-white rounded-full md:py-5 md:text-base md:px-10">Discover</a>
           </div>
         </section>
         <section className="py-12 text-center section md:py-20">
@@ -100,17 +100,17 @@ export default function Home({ cms, news }: { cms: ICms, news: INews[] }) {
             </h3>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-[#F9E9E8] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center w-full gap-3 p-8 py-12 shadow-lg rounded-2xl">
               <Image src={Primary1Img} alt="" className="w-16 h-16" />
               <h5 className="mb-3 text-2xl font-extrabold capitalize">Dynamic Web Apps</h5>
               <p className="text-[#6D6D6D]">We develop dynamic web apps with enhanced security and strict SLA compliance for maintenance.</p>
             </div>
-            <div className="bg-[#F9E9E8] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center w-full gap-3 p-8 py-12 shadow-lg rounded-2xl">
               <Image src={SecondaryImg} alt="" className="w-16 h-16" />
               <h5 className="mb-3 text-2xl font-extrabold capitalize">Mobile App Solutions</h5>
               <p className="text-[#6D6D6D]">Develop and maintain mobile apps to maximize uptime and enhance user experience</p>
             </div>
-            <div className="bg-[#F9E9E8] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center w-full gap-3 p-8 py-12 shadow-lg rounded-2xl">
               <Image src={UniversityImg} alt="" className="w-16 h-16" />
               <h5 className="mb-3 text-2xl font-extrabold capitalize">Tailored Business Solutions</h5>
               <p className="text-[#6D6D6D]">Custom solutions to meet unique business needs, driving efficiency and transformation</p>
@@ -131,28 +131,28 @@ export default function Home({ cms, news }: { cms: ICms, news: INews[] }) {
               </p>
               <div className="grid gap-5 mb-4 max-w-fit">
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-red-100 flex-[0_0_32px] flex justify-center items-center">
+                    <div className="w-8 h-8 rounded-full bg-gray-100 flex-[0_0_32px] flex justify-center items-center">
                       <AiOutlineCheck className="text-primary" />
                     </div>
                     <p>Web Development & Maintenance</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-red-100 flex-[0_0_32px] flex justify-center items-center">
+                    <div className="w-8 h-8 rounded-full bg-gray-100 flex-[0_0_32px] flex justify-center items-center">
                       <AiOutlineCheck className="text-primary" />
                     </div>
                     <p>Mobile App Development</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-red-100 flex-[0_0_32px] flex justify-center items-center">
+                    <div className="w-8 h-8 rounded-full bg-gray-100 flex-[0_0_32px] flex justify-center items-center">
                       <AiOutlineCheck className="text-primary" />
                     </div>
                     <p>Customized Business Solutions</p>
                   </div>
               </div>
-              <a href={`https://box.reinsys.net/brilliant/`} className="px-6 py-3 text-sm text-white bg-yellow-400 md:text-base rounded-xl w-fit">Contact Us</a>
+              <a href={`/`} className="px-6 py-3 text-sm text-white bg-[#3B6396] md:text-base rounded-xl w-fit">Contact Us</a>
             </div>
             <div className="w-full h-full min-h-96 md:min-h-[500px] relative flex justify-center items-center">
-              <div className="absolute -z-0 flex justify-center items-center bg-yellow-400 rounded-full w-72 h-72 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px]"></div>
+              <div className="absolute -z-0 flex justify-center items-center bg-[#3B6396] rounded-full w-72 h-72 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px]"></div>
               <Image src={GradImg} alt="" className="relative z-10 object-cover w-full h-full" />
             </div>
           </div>

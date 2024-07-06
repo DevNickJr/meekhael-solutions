@@ -4,9 +4,9 @@ export default function Document() {
   return (
     <Html lang="en">
        <Head>
-        <link rel="icon" href="/faviconimg.png" />
+        <link rel="icon" href="/meek.png" />
       </Head>
-      <body className='bg-white text-black'>
+      <body className='text-black bg-white'>
         <Main />
         <NextScript />
       </body>

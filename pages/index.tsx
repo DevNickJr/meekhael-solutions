@@ -3,16 +3,16 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Button from "@/components/Button";
 import Image from "next/image";
-import HeroImg from '@/assets/img1.png'
-import QualifiedImg from '@/assets/img2.png'
+import HeroImg from '@/assets/laptop.jpg'
+import QualifiedImg from '@/assets/do-more.jpg'
 import HeroBg from '@/assets/hero-bg.png'
-import Primary1Img from '@/assets/primary-1.png'
-import SecondaryImg from '@/assets/school.png'
-import UniversityImg from '@/assets/university.png'
+import Primary1Img from '@/assets/laptop.jpg'
+import SecondaryImg from '@/assets/pc.jpg'
+import UniversityImg from '@/assets/pc2.jpg'
 import NewsImg from '@/assets/news.png'
-import GradImg from '@/assets/graduation.png'
+import GradImg from '@/assets/pc3.jpg'
 import Link from "next/link";
-import { IAdvisory, ICandidate, ICms, INews, IReducerAction } from '@/interfaces'
+import { ICms, INews } from '@/interfaces'
 import dbConnect from '@/lib/dbConnection';
 import CmsModel from '@/models/CmsModel';
 import NewsModel from '@/models/NewsModel';

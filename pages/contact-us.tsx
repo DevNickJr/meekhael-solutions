@@ -5,7 +5,7 @@ import Header from '@/components/Header'
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
-import ContactImg from '@/assets/contact.png'
+import ContactImg from '@/assets/about-us.jpg'
 import { IFeedback, IReducerAction } from '@/interfaces'
 import usePost from '@/hooks/usePost';
 import { toast } from 'react-toastify';

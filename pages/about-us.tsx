@@ -2,8 +2,8 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import About2 from '@/assets/about1.png'
-import About1 from '@/assets/about2.png'
+import About2 from '@/assets/it.jpg'
+import About1 from '@/assets/solutions.jpg'
 import dbConnect from '@/lib/dbConnection';
 import About from '@/models/AboutModel';
 
@@ -61,22 +61,22 @@ const AboutUs = (props: any) => {
             </h3>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-[#F9E9E8] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center w-full gap-3 p-8 py-12 shadow-lg rounded-2xl">
               <Image src={About1} alt="" className="w-16 h-16" />
               <h5 className="mb-3 text-2xl font-extrabold capitalize">Dynamic Web Apps</h5>
               <p className="text-[#6D6D6D]">We develop dynamic web apps with enhanced security and strict SLA compliance for maintenance.</p>
             </div>
-            <div className="bg-[#F9E9E8] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center w-full gap-3 p-8 py-12 shadow-lg rounded-2xl">
               <Image src={About1} alt="" className="w-16 h-16" />
               <h5 className="mb-3 text-2xl font-extrabold capitalize">Mobile App Solutions</h5>
               <p className="text-[#6D6D6D]">Develop and maintain mobile apps to maximize uptime and enhance user experience</p>
             </div>
-            <div className="bg-[#F9E9E8] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center w-full gap-3 p-8 py-12 shadow-lg rounded-2xl">
               <Image src={About1} alt="" className="w-16 h-16" />
               <h5 className="mb-3 text-2xl font-extrabold capitalize">Tailored Business Solutions</h5>
               <p className="text-[#6D6D6D]">Custom solutions to meet unique business needs, driving efficiency and transformation</p>
             </div>
-            {/* <div className="bg-[#F9E9E8] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+            {/* <div className="flex flex-col items-center w-full gap-3 p-8 py-12 shadow-lg rounded-2xl">
               <Image src={About1} alt="" className="w-16 h-16" />
               <h5 className="mb-3 text-2xl font-extrabold capitalize">Expertise in Content Creation</h5>
               <p className="text-[#6D6D6D]">Specializing in impactful content writing and engaging digital communication strategies.</p>

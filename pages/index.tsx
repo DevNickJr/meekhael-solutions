@@ -15,7 +15,6 @@ import Link from "next/link";
 import { IAdvisory, ICandidate, ICms, INews, IReducerAction } from '@/interfaces'
 import dbConnect from '@/lib/dbConnection';
 import CmsModel from '@/models/CmsModel';
-import AdvisoryModel from '@/models/AdvisoryModel';
 import NewsModel from '@/models/NewsModel';
 import { useRouter } from "next/router";
 import NewsCard from "@/components/NewsCard";
@@ -32,7 +31,7 @@ import { AiOutlineCheck } from "react-icons/ai";
 
 // type IAction = 'email' | 'name' | 'number' | 'category' | 'reset'
 
-export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAdvisory[], news: INews[] }) {
+export default function Home({ cms, news }: { cms: ICms, news: INews[] }) {
   const router = useRouter()
 
   return (
@@ -240,15 +239,12 @@ export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAd
 
 export const getServerSideProps = async () => {
   let cms = {}
-  let advisory = []
   let news = []
   try {
       await dbConnect()
       const res = await CmsModel.findOne({}).lean();
       cms = JSON.parse(JSON.stringify(res))
 
-      const response = await AdvisoryModel.find({}).lean();
-      advisory = JSON.parse(JSON.stringify(response))
 
       const news_res = await NewsModel.find({}).sort('-createdAt').lean();
       // console.log({news_res})
@@ -260,7 +256,6 @@ export const getServerSideProps = async () => {
           props: {
               cms: {},
               news: [],
-              advisory: [],
               status: 'failed'
           }
       }
@@ -270,7 +265,6 @@ export const getServerSideProps = async () => {
   return {
       props: {
           cms,
-          advisory,
           news,
           status: 'success'
       }

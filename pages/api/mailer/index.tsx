@@ -1,7 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import dbConnect from '@/lib/dbConnection';
-import Ambassador from '@/models/AmbassadorModel';
-import { IAmbassador } from '@/interfaces';
 import { getServerSession } from "next-auth/next"
 import { authOptions } from "../auth/[...nextauth]"
 import nodemailer from 'nodemailer';

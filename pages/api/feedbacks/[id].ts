@@ -19,7 +19,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     } 
 
 
-
     if (req.method !== 'DELETE' && req.method !== 'GET') {
       return res.status(400).json({ message: 'Request Method Not allowed' })
     }

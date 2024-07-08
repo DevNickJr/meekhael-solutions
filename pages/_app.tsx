@@ -4,7 +4,6 @@ import "@fontsource/argentum-sans"
 import { SessionProvider } from "next-auth/react"
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
-import firebaseConfig from '@/configs/firebase.config.js'
 
 
 export default function App({ Component, pageProps: { session, ...pageProps } }: AppProps) {

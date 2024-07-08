@@ -39,7 +39,7 @@ export default function Home({ cms, news }: { cms: ICms, news: INews[] }) {
       <Head>
         <title>Meekhaael Solutions Limited</title>
         <meta name="description" content="Meekhaael Solutions Limited official website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/meek.png" />
       </Head>
       <div className="">
         <Header />

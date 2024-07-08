@@ -115,7 +115,7 @@ const EditAbout = () => {
             <link rel="icon" href="/faviconimg.png" />
         </Head>
         {(posting || loading || uploadingImage) && <Loader modalOpen={true} />}
-        <div className='p-4 py-12 sm:px-12 h-full overflow-y-auto'>
+        <div className='p-4 py-20 sm:px-12 h-full overflow-y-auto'>
             {/* <div className="flex items-center gap-4 justify-between mb-16">
                 <h1 className='text-3xl text-black/70 font-argentinum'>Content Management System</h1>
             </div> */}

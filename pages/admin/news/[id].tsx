@@ -100,19 +100,19 @@ const EditNews = () => {
             <link rel="icon" href="/faviconimg.png" />
         </Head>
         {(loading || posting || uploadingImage) && <Loader modalOpen={true} />}
-        <div className='p-4 py-12 sm:px-12 h-full overflow-y-auto'>
-            <div className="flex items-center gap-4 justify-between mb-16">
+        <div className='h-full p-4 py-20 overflow-y-auto sm:px-12'>
+            <div className="flex items-center justify-between gap-4 mb-16">
                 <h1 className='text-3xl text-black/70 font-argentinum'>Edit News</h1>
-                <Button onClick={() => router.push("/admin/news")} className="text-white px-4 sm:px-6 py-2 rounded-xl text-sm">View News</Button>
+                <Button onClick={() => router.push("/admin/news")} className="px-4 py-2 text-sm text-white sm:px-6 rounded-xl">View News</Button>
             </div>
             <form className="flex flex-col gap-4" onSubmit={updateNews}>
                 <div className="flex flex-col gap-1">
                     <label htmlFor="title" className="text-black/70">Title</label>
-                    <input required onChange={(e) => dispatch({ type: 'title', payload: e.target.value })} value={news?.title} type="text" name="title" id="title" className="border border-black/20 rounded-md p-2" />
+                    <input required onChange={(e) => dispatch({ type: 'title', payload: e.target.value })} value={news?.title} type="text" name="title" id="title" className="p-2 border rounded-md border-black/20" />
                 </div>
                 <div className="flex flex-col gap-1">
                     <label htmlFor="snippet" className="text-black/70">Snippet</label>
-                    <input maxLength={120} required onChange={(e) => dispatch({ type: 'snippet', payload: e.target.value })} value={news?.snippet} type="text" name="snippet" id="snippet" className="border border-black/20 rounded-md p-2" />
+                    <input maxLength={120} required onChange={(e) => dispatch({ type: 'snippet', payload: e.target.value })} value={news?.snippet} type="text" name="snippet" id="snippet" className="p-2 border rounded-md border-black/20" />
                 </div>
                 <div className="flex flex-col gap-1">
                     <label htmlFor="description" className="text-black/70">Content</label>
@@ -121,12 +121,12 @@ const EditNews = () => {
                 <div className="flex flex-col gap-1">
                         <span className="text-black/70">Upload Image</span>
                          {news?.image &&
-                            <Image width={100} height={100} src={news?.image} alt="" className="h-24 w-24 bg-gray-100 object-cover z-10 relative" />
+                            <Image width={100} height={100} src={news?.image} alt="" className="relative z-10 object-cover w-24 h-24 bg-gray-100" />
                          }
                         <input type='file' name='image' id='image' className='' onChange={(e) => uploadImage(e.target.files![0])}  />
                 </div>
                 <div className="flex items-center gap-4 mt-8">
-                    <Button type='submit' className="text-white px-4 sm:px-6 py-2 rounded-md text-sm">Update</Button>
+                    <Button type='submit' className="px-4 py-2 text-sm text-white rounded-md sm:px-6">Update</Button>
                 </div>
             </form>
         </div>

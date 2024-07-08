@@ -48,7 +48,7 @@ const colums = [
     extra: true,
     custom: (val: string, meta: any) => {
       return  (
-        <div className="gap-4 justify-center">
+        <div className="justify-center gap-4">
           <Button onClick={() => router.push(`/admin/cms/${meta?._id}`)} className="p-2 px-4 text-white rounded-full">Edit</Button>
           {/* <BiEdit size="1.2rem" className="text-orange" />
           <MdOutlineDelete size="1.2rem" className="text-red-400" /> */}
@@ -85,10 +85,10 @@ const colums = [
         <link rel="icon" href="/faviconimg.png" />
       </Head>
       {loading && <Loader modalOpen={true} />}
-      <div className='p-4 py-12 sm:px-12 h-full overflow-y-auto'>
-        <div className="flex items-center gap-4 justify-between mb-16">
+      <div className='h-full p-4 py-20 overflow-y-auto sm:px-12'>
+        <div className="flex items-center justify-between gap-4 mb-16">
             <h1 className='text-3xl text-black/70 font-argentinum'>Content Management System</h1>
-            {/* <Button onClick={() => router.push("/admin/cms/add")} className="text-white px-4 sm:px-6 py-2 rounded-xl text-sm whitespace-nowrap">Add Board Member</Button> */}
+            {/* <Button onClick={() => router.push("/admin/cms/add")} className="px-4 py-2 text-sm text-white sm:px-6 rounded-xl whitespace-nowrap">Add Board Member</Button> */}
         </div>
         <Table<ICms> data={data} columns={colums} className={''} />
       </div>

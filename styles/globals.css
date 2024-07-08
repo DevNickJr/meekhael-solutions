@@ -34,10 +34,10 @@
 
 
 .grad-to-bottom {
-    background-image: linear-gradient(to bottom, #D42F27,#D93C29,#F6792E);
+    background-image: linear-gradient(to bottom, #61769a,#4b7bb9,#4b8adb);
   }
 .grad-to-top {
-    background-image: linear-gradient(to top, #F6792E, #D93C29, #D42F27);
+    background-image: linear-gradient(to top, #4b8adb, #4b7bb9, #61769a);
   }
   
 .grad-to-right {

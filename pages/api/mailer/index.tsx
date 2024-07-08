@@ -22,13 +22,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
     else {
         const { sender, recipient, subject, message } = req.body;
-        console.log({sender, recipient, subject, message})
+        // console.log({sender, recipient, subject, message})
 
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-              user: 'nicholasduadei14@gmail.com',
-              pass: 'qbltztxonnsivedv'
+              user: 'amail@gmail.com',
+              pass: 'apassword'
             }
           });
 

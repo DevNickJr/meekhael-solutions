@@ -8,7 +8,7 @@ import { TbSitemap } from 'react-icons/tb'
 import { TiNews } from 'react-icons/ti'
 import { FaAward } from 'react-icons/fa'
 import { AiTwotoneGold, AiOutlineHome } from 'react-icons/ai'
-import Logo from "@/assets/logo-tp.png"
+import Logo from "@/assets/meek.png"
 import Image from 'next/image'
 import { useSession, signIn, signOut } from "next-auth/react"
 

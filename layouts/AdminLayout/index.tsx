@@ -6,9 +6,9 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
   
 
   return (
-      <div className='flex bg-footer-bg overflow-hidden h-screen w-full'>
+      <div className='flex w-full h-screen overflow-hidden bg-footer-bg'>
         <SideNav />
-        <div className="flex-1 overflow-y-auto overflow-hidden bg-black/5 relative pt-12">
+        <div className="relative flex-1 pt-12 overflow-hidden overflow-y-auto bg-black/5">
           <Head />
           {children}
         </div>

@@ -22,14 +22,29 @@ const Header = () => {
             <li className='relative bg-white cursor-pointer group'>
               <span className={`pb-1.5 px-1 font-medium`}>Our Services</span>
               <div className='absolute left-0 flex-col hidden gap-2 bg-white shadow-md top-6 group-hover:flex'>
-                <a href={`/services`} className='py-2 border-b-2'>
+                {/* <a href={`/services`} className='py-2 border-b-2'>
                   <span className={`py-2 pb-2.5 px-6 text-xs font-medium`}>
-                    Service 1
+                    Web Development
                   </span>
-                </a>
+                </a> */}
                 <Link href={`/services`} className='pb-2'>
                   <span className={`py-2 pb-2.5 px-6 text-xs font-medium`}>
-                    Service 2
+                    Web Development
+                  </span>
+                </Link>
+                <Link href={`/services`} className='pb-2'>
+                  <span className={`py-2 pb-2.5 px-6 text-xs font-medium`}>
+                    Mobile App Development
+                  </span>
+                </Link>
+                <Link href={`/services`} className='pb-2'>
+                  <span className={`py-2 pb-2.5 px-6 text-xs font-medium`}>
+                    Content Writing
+                  </span>
+                </Link>
+                <Link href={`/services`} className='pb-2'>
+                  <span className={`py-2 pb-2.5 px-6 text-xs font-medium`}>
+                    Customized Business Solutions
                   </span>
                 </Link>
               </div>
@@ -60,14 +75,29 @@ const Header = () => {
             <li className='relative bg-white cursor-pointer group'>
               <span className={`pb-1.5 px-1 font-medium`}>Our Services</span>
               <div className='absolute left-0 flex-col hidden gap-2 bg-white shadow-md top-6 group-hover:flex'>
-                <a href={`/services`} className='py-2 border-b-2'>
+                {/* <a href={`/services`} className='py-2 border-b-2'>
                   <span className={`py-2 pb-2.5 px-6 text-xs font-medium`}>
                     Service 1
                   </span>
-                </a>
+                </a> */}
                 <Link href={`/services`} className='pb-2'>
                   <span className={`py-2 pb-2.5 px-6 text-xs font-medium`}>
-                    Service 2
+                    Web Development
+                  </span>
+                </Link>
+                <Link href={`/services`} className='pb-2'>
+                  <span className={`py-2 pb-2.5 px-6 text-xs font-medium`}>
+                    Mobile App Development
+                  </span>
+                </Link>
+                <Link href={`/services`} className='pb-2'>
+                  <span className={`py-2 pb-2.5 px-6 text-xs font-medium`}>
+                    Content Writing
+                  </span>
+                </Link>
+                <Link href={`/services`} className='pb-2'>
+                  <span className={`py-2 pb-2.5 px-6 text-xs font-medium`}>
+                    Customized Business Solutions
                   </span>
                 </Link>
               </div>
